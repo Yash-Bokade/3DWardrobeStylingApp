@@ -1,0 +1,10 @@
+{
+  "description": "Organize your clothing in a digital wardrobe, then style a 3D mannequin by dragging outfits into place and adjusting the scene lighting.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

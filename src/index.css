@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    --bg-canvas: #F5F3EF;
+    --bg-hud: rgba(255, 255, 255, 0.78);
+    --text-primary: #141413;
+    --text-secondary: #686662;
+    --accent-amber: #D96B27;
+    --border-hairline: rgba(20, 20, 19, 0.09);
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: #F5F3EF;
+    color: #141413;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-mono-tech {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Subtle custom scrollbars inside floating drawer lists only */
+.studio-scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.studio-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.studio-scroll::-webkit-scrollbar-thumb {
+  background: rgba(20, 20, 19, 0.16);
+  border-radius: 9999px;
+}
+.studio-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(20, 20, 19, 0.32);
+}
